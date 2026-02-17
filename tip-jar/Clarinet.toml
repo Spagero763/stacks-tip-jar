@@ -1,0 +1,21 @@
+[project]
+name = 'tip-jar'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.tip-jar]
+path = 'contracts/tip-jar.clar'
+clarity_version = 3
+epoch = 'latest'
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
